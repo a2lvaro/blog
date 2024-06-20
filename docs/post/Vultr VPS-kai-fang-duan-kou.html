@@ -12,11 +12,9 @@
 <meta name="description" content="
 
 
-
 使用Vultr遇到的问题，创建了一个VPS后，系统是Debian, 并在控制台设置了Firewall Group开放HTTP之后，还是无法访问80端口。">
 <meta property="og:title" content="Vultr VPS开放端口">
 <meta property="og:description" content="
-
 
 
 使用Vultr遇到的问题，创建了一个VPS后，系统是Debian, 并在控制台设置了Firewall Group开放HTTP之后，还是无法访问80端口。">
@@ -81,16 +79,21 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div class="markdown-body" id="postBody"><p>使用Vultr遇到的问题，创建了一个VPS后，系统是Debian, 并在控制台设置了Firewall Group开放HTTP之后，还是无法访问80端口。</p>
 <p>网上说是Firewall或者iptables的问题，确实是有可能。但是VPS根本就没有Firewall和iptables。</p>
 <p>后来发现系统中有个叫ufw(Uncomplicated firewall)。 下面是ufw的一些操作命令。</p>
-<p>启用ufw<br>
-<code class="notranslate">ufw enable</code></p>
-<p>禁用ufw<br>
-<code class="notranslate">ufw disable</code></p>
-<p>开放80端口<br>
-<code class="notranslate">ufw allow 80</code></p>
-<p>禁用80端口<br>
-<code class="notranslate">ufw deny 80</code></p>
-<p>查看配置规则以及状态<br>
-<code class="notranslate">ufw status</code></p>
+<p>启用ufw</p>
+<pre class="notranslate"><code class="notranslate">ufw enable
+</code></pre>
+<p>禁用ufw</p>
+<pre class="notranslate"><code class="notranslate">ufw disable
+</code></pre>
+<p>开放80端口</p>
+<pre class="notranslate"><code class="notranslate">ufw allow 80
+</code></pre>
+<p>禁用80端口</p>
+<pre class="notranslate"><code class="notranslate">ufw deny 80
+</code></pre>
+<p>查看配置规则以及状态</p>
+<pre class="notranslate"><code class="notranslate">ufw status
+</code></pre>
 <p>操作步骤：<br>
 首先通过 ufw disable禁用ufw，先测试是不是防火墙拦截了访问，如果没问题可以恢复防火墙ufw enable。<br>
 如果是防火墙拦截了端口, 开放端口ufw allow 80即可。</p></div>
