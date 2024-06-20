@@ -1,2 +1,33 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Ray Blog</title><link>https://a2lvaro.github.io/blog</link><description>I am Ray, share good information</description><copyright>Ray Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/154407375?v=4</url><title>avatar</title><link>https://a2lvaro.github.io/blog</link></image><lastBuildDate>Thu, 20 Jun 2024 02:41:22 +0000</lastBuildDate><managingEditor>Ray Blog</managingEditor><ttl>60</ttl><webMaster>Ray Blog</webMaster><item><title>Ray Blog</title><link>https://a2lvaro.github.io/blog/post/Ray%20Blog.html</link><description>Hello World。</description><guid isPermaLink="true">https://a2lvaro.github.io/blog/post/Ray%20Blog.html</guid><pubDate>Thu, 20 Jun 2024 02:12:31 +0000</pubDate></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Ray Blog</title><link>https://a2lvaro.github.io/blog</link><description>I am Ray, share good information</description><copyright>Ray Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/154407375?v=4</url><title>avatar</title><link>https://a2lvaro.github.io/blog</link></image><lastBuildDate>Thu, 20 Jun 2024 03:28:59 +0000</lastBuildDate><managingEditor>Ray Blog</managingEditor><ttl>60</ttl><webMaster>Ray Blog</webMaster><item><title>通过 Acme 脚本免费申请 SSL 证书，自动更新证书，免费 CA 证书申请教程</title><link>https://a2lvaro.github.io/blog/post/tong-guo-%20Acme%20-jiao-ben-mian-fei-shen-qing-%20SSL%20-zheng-shu-%EF%BC%8C-zi-dong-geng-xin-zheng-shu-%EF%BC%8C-mian-fei-%20CA%20-zheng-shu-shen-qing-jiao-cheng.html</link><description># 通过 Acme 脚本免费申请 SSL 证书，自动更新证书，免费 CA 证书申请教程&#13;
+&#13;
+1. 安装依赖软件&#13;
+```&#13;
+apt update&#13;
+apt upgrade -y&#13;
+apt install socat curl -y&#13;
+```&#13;
+2. 安装 acme 脚本&#13;
+```&#13;
+curl https://get.acme.sh | sh&#13;
+```&#13;
+3. 注册账号&#13;
+替换 your@email.com为你的邮箱&#13;
+&#13;
+```&#13;
+~/.acme.sh/acme.sh --register-account -m your@email.com&#13;
+```&#13;
+4.1 80 端口验证申请&#13;
+如果你的 80 端口是空闲，也就是没有运行任何 Web 服务，那么 acme.sh 可以假装自己是一个 Web 服务，临时监听 80 端口，从而完成验证&#13;
+&#13;
+```&#13;
+~/.acme.sh/acme.sh --issue -d your-domain.com --standalone&#13;
+```&#13;
+4.2 Nginx 验证申请&#13;
+如果你的服务器已经部署了 Nginx 服务，并且域名已经在 Nginx 中进行了配置，那么可以通过验证 Nginx 的方式申请证书&#13;
+&#13;
+```&#13;
+~/.acme.sh/acme.sh --issue -d your-domain.com --nginx&#13;
+```&#13;
+4.3 http 验证申请&#13;
+如果你的服务器已经部署了网站环境。</description><guid isPermaLink="true">https://a2lvaro.github.io/blog/post/tong-guo-%20Acme%20-jiao-ben-mian-fei-shen-qing-%20SSL%20-zheng-shu-%EF%BC%8C-zi-dong-geng-xin-zheng-shu-%EF%BC%8C-mian-fei-%20CA%20-zheng-shu-shen-qing-jiao-cheng.html</guid><pubDate>Thu, 20 Jun 2024 03:28:33 +0000</pubDate></item><item><title>Ray Blog</title><link>https://a2lvaro.github.io/blog/post/Ray%20Blog.html</link><description>Hello World。</description><guid isPermaLink="true">https://a2lvaro.github.io/blog/post/Ray%20Blog.html</guid><pubDate>Thu, 20 Jun 2024 02:12:31 +0000</pubDate></item></channel></rss>
