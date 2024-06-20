@@ -9,13 +9,21 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="Hello World。">
-<meta property="og:title" content="Ray Blog">
-<meta property="og:description" content="Hello World。">
+<meta name="description" content="# Vultr VPS开放端口
+
+
+
+使用Vultr遇到的问题，创建了一个VPS后，系统是Debian, 并在控制台设置了Firewall Group开放HTTP之后，还是无法访问80端口。">
+<meta property="og:title" content="Vultr VPS开放端口">
+<meta property="og:description" content="# Vultr VPS开放端口
+
+
+
+使用Vultr遇到的问题，创建了一个VPS后，系统是Debian, 并在控制台设置了Firewall Group开放HTTP之后，还是无法访问80端口。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://a2lvaro.github.io/blog/post/Ray%20Blog.html">
+<meta property="og:url" content="https://a2lvaro.github.io/blog/post/Vultr%20VPS-kai-fang-duan-kou.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/154407375?v=4">
-<title>Ray Blog</title>
+<title>Vultr VPS开放端口</title>
 
 
 </head>
@@ -46,7 +54,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle">Ray Blog</h1>
+<h1 class="postTitle">Vultr VPS开放端口</h1>
 <div class="title-right">
     <a href="https://a2lvaro.github.io/blog" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -54,7 +62,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/a2lvaro/blog/issues/1" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/a2lvaro/blog/issues/2" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -70,7 +78,23 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>Hello World</p></div>
+<div class="markdown-body" id="postBody"><h1>Vultr VPS开放端口</h1>
+<p>使用Vultr遇到的问题，创建了一个VPS后，系统是Debian, 并在控制台设置了Firewall Group开放HTTP之后，还是无法访问80端口。</p>
+<p>网上说是Firewall或者iptables的问题，确实是有可能。但是VPS根本就没有Firewall和iptables。</p>
+<p>后来发现系统中有个叫ufw(Uncomplicated firewall)。 下面是ufw的一些操作命令。</p>
+<p>启用ufw<br>
+<code class="notranslate">ufw enable</code></p>
+<p>禁用ufw<br>
+<code class="notranslate">ufw disable</code></p>
+<p>开放80端口<br>
+<code class="notranslate">ufw allow 80</code></p>
+<p>禁用80端口<br>
+<code class="notranslate">ufw deny 80</code></p>
+<p>查看配置规则以及状态<br>
+<code class="notranslate">ufw status</code></p>
+<p>操作步骤：<br>
+首先通过 ufw disable禁用ufw，先测试是不是防火墙拦截了访问，如果没问题可以恢复防火墙ufw enable。<br>
+如果是防火墙拦截了端口, 开放端口ufw allow 80即可。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
