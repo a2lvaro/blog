@@ -1,5 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Ray Blog</title><link>https://a2lvaro.github.io/blog</link><description>I am Ray, share good information</description><copyright>Ray Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/154407375?v=4</url><title>avatar</title><link>https://a2lvaro.github.io/blog</link></image><lastBuildDate>Fri, 21 Jun 2024 04:57:28 +0000</lastBuildDate><managingEditor>Ray Blog</managingEditor><ttl>60</ttl><webMaster>Ray Blog</webMaster><item><title>什么是电信CTGNetGIA？与CN2GIA的区别</title><link>https://a2lvaro.github.io/blog/post/shen-me-shi-dian-xin-CTGNetGIA%EF%BC%9F-yu-CN2GIA-de-qu-bie.html</link><description>&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Ray Blog</title><link>https://a2lvaro.github.io/blog</link><description>I am Ray, share good information</description><copyright>Ray Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/154407375?v=4</url><title>avatar</title><link>https://a2lvaro.github.io/blog</link></image><lastBuildDate>Fri, 21 Jun 2024 05:22:33 +0000</lastBuildDate><managingEditor>Ray Blog</managingEditor><ttl>60</ttl><webMaster>Ray Blog</webMaster><item><title>查询目标网站是否支持 OCSP Stapling</title><link>https://a2lvaro.github.io/blog/post/cha-xun-mu-biao-wang-zhan-shi-fou-zhi-chi-%20OCSP%20Stapling.html</link><description>&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+如何寻找 TLS1.3/H2 的网站&#13;
+目标网站最低标准：国外网站，支持 TLSv1.3 与 H2，域名非跳转用&#13;
+&#13;
+加分项：IP 相近（更像，且延迟低），Server Hello 后的握手消息一起加密（如 dl.google.com），有 OCSP Stapling&#13;
+&#13;
+配置加分项：禁回国流量，TCP/80、UDP/443 也转发（REALITY 对外表现即为端口转发，目标 IP 冷门或许更好）&#13;
+&#13;
+可以使用这个网站：[点击访问](https://www.ssllabs.com/projects/index.html) ，来寻找 TLS1.3 / X25519 / H2 的指向站点&#13;
+也可以使用这个网站：[点击访问](http://web.chacuo.net/netocspstapling) ，来查询目标网站是否支持 OCSP Stapling （加分项而已，不支持也没有太大关系）&#13;
+&#13;
+。</description><guid isPermaLink="true">https://a2lvaro.github.io/blog/post/cha-xun-mu-biao-wang-zhan-shi-fou-zhi-chi-%20OCSP%20Stapling.html</guid><pubDate>Fri, 21 Jun 2024 05:22:09 +0000</pubDate></item><item><title>什么是电信CTGNetGIA？与CN2GIA的区别</title><link>https://a2lvaro.github.io/blog/post/shen-me-shi-dian-xin-CTGNetGIA%EF%BC%9F-yu-CN2GIA-de-qu-bie.html</link><description>&#13;
 一、什么是 CTGNet GIA?&#13;
 &#13;
 　　CTGNet (AS23764)，是中国电信全球公司 China Telecom Global(CTG)新构建的一个国际多业务承载网络，面向企业客户提供定制化的国际互联网专线接入服务(GIA)，以高速、稳定、良好的中国方向访问质量，为国内企业出海和海外企业提供很好的中国网络方案。</description><guid isPermaLink="true">https://a2lvaro.github.io/blog/post/shen-me-shi-dian-xin-CTGNetGIA%EF%BC%9F-yu-CN2GIA-de-qu-bie.html</guid><pubDate>Fri, 21 Jun 2024 04:57:07 +0000</pubDate></item><item><title>通过 Acme 脚本免费申请 SSL 证书，自动更新证书，免费 CA 证书申请教程</title><link>https://a2lvaro.github.io/blog/post/tong-guo-%20Acme%20-jiao-ben-mian-fei-shen-qing-%20SSL%20-zheng-shu-%EF%BC%8C-zi-dong-geng-xin-zheng-shu-%EF%BC%8C-mian-fei-%20CA%20-zheng-shu-shen-qing-jiao-cheng.html</link><description>&#13;
