@@ -1,9 +1,11 @@
-{
+,{
     "title":"Ray Blog",
     "subTitle":"快乐每一天",
     "avatarUrl":"https://avatars.githubusercontent.com/u/154407375?v=4",
     "GMEEK_VERSION":"last",
     "startSite":"06/20/2024",
     "i18n":"CN",
-    "UTC":8
+    "UTC":8,
+    "allHead":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>"
+
 }
