@@ -1,3 +1,4 @@
+
 １.编辑器与窗口管理相关快捷键：
 新建文件：
 ctrl + n
@@ -106,5 +107,5 @@ ctrl + shift +ｕ
 
 
 8.修改默认快捷键的方法:
-![Uploading cc2190d1ab2bdc3fbc385825082ad364.png…]()
+![cc2190d1ab2bdc3fbc385825082ad364](https://github.com/user-attachments/assets/121a4a3c-845b-4f9f-8851-ac562b983264)
 
