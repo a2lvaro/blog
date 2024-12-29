@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Ray Blog</title><link>https://a2lvaro.github.io/blog</link><description>快乐每一天</description><copyright>Ray Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/154407375?v=4</url><title>avatar</title><link>https://a2lvaro.github.io/blog</link></image><lastBuildDate>Sun, 29 Dec 2024 02:19:29 +0000</lastBuildDate><managingEditor>Ray Blog</managingEditor><ttl>60</ttl><webMaster>Ray Blog</webMaster><item><title>50个VSCode的快捷键</title><link>https://a2lvaro.github.io/blog/post/50-ge-VSCode-de-kuai-jie-jian.html</link><description>&#13;
-１.编辑器与窗口管理相关快捷键：&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Ray Blog</title><link>https://a2lvaro.github.io/blog</link><description>快乐每一天</description><copyright>Ray Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/154407375?v=4</url><title>avatar</title><link>https://a2lvaro.github.io/blog</link></image><lastBuildDate>Sun, 29 Dec 2024 02:24:19 +0000</lastBuildDate><managingEditor>Ray Blog</managingEditor><ttl>60</ttl><webMaster>Ray Blog</webMaster><item><title>50个VSCode的快捷键</title><link>https://a2lvaro.github.io/blog/post/50-ge-VSCode-de-kuai-jie-jian.html</link><description>１.编辑器与窗口管理相关快捷键：&#13;
 新建文件：&#13;
 ctrl + n&#13;
 文件之间的切换：&#13;
@@ -108,6 +107,7 @@ ctrl + shift +ｕ&#13;
 &#13;
 &#13;
 8.修改默认快捷键的方法:&#13;
+![Uploading cc2190d1ab2bdc3fbc385825082ad364.png…]()&#13;
 &#13;
 。</description><guid isPermaLink="true">https://a2lvaro.github.io/blog/post/50-ge-VSCode-de-kuai-jie-jian.html</guid><pubDate>Sun, 29 Dec 2024 02:19:04 +0000</pubDate></item><item><title>OpenWrt 安装后overlay扩容</title><link>https://a2lvaro.github.io/blog/post/OpenWrt%20-an-zhuang-hou-overlay-kuo-rong.html</link><description>下面的教程实现直接将系统的空闲空间扩容&#13;
 &#13;
