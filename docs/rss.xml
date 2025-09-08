@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Ray Blog</title><link>https://a2lvaro.github.io/blog</link><description>快乐每一天</description><copyright>Ray Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/154407375?v=4</url><title>avatar</title><link>https://a2lvaro.github.io/blog</link></image><lastBuildDate>Wed, 09 Jul 2025 16:32:09 +0000</lastBuildDate><managingEditor>Ray Blog</managingEditor><ttl>60</ttl><webMaster>Ray Blog</webMaster><item><title>50个VSCode的快捷键</title><link>https://a2lvaro.github.io/blog/post/50-ge-VSCode-de-kuai-jie-jian.html</link><description>&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Ray Blog</title><link>https://a2lvaro.github.io/blog</link><description>快乐每一天</description><copyright>Ray Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/154407375?v=4</url><title>avatar</title><link>https://a2lvaro.github.io/blog</link></image><lastBuildDate>Mon, 08 Sep 2025 16:29:25 +0000</lastBuildDate><managingEditor>Ray Blog</managingEditor><ttl>60</ttl><webMaster>Ray Blog</webMaster><item><title>50个VSCode的快捷键</title><link>https://a2lvaro.github.io/blog/post/50-ge-VSCode-de-kuai-jie-jian.html</link><description>&#13;
 １.编辑器与窗口管理相关快捷键：&#13;
 新建文件：&#13;
 ctrl + n&#13;
@@ -124,7 +124,20 @@ opkg install cfdisk&#13;
 &#13;
 执行 cfdisk，上下键选择分区，左右键选择功能。</description><guid isPermaLink="true">https://a2lvaro.github.io/blog/post/OpenWrt%20-an-zhuang-hou-overlay-kuo-rong.html</guid><pubDate>Sat, 28 Dec 2024 05:17:44 +0000</pubDate></item><item><title>Debian增加auth.log日志</title><link>https://a2lvaro.github.io/blog/post/Debian-zeng-jia-auth.log-ri-zhi.html</link><description>&#13;
  &#13;
-Debian默认没有auth.log文件的，auth.log日志文件，记录了ssh登录的一些信息，里面包括ip地址、端口号、用户名等信息，如下一条记录日志。</description><guid isPermaLink="true">https://a2lvaro.github.io/blog/post/Debian-zeng-jia-auth.log-ri-zhi.html</guid><pubDate>Sat, 28 Dec 2024 05:08:01 +0000</pubDate></item><item><title>搬瓦工开启密钥登陆(SSH_KEYS)VPS</title><link>https://a2lvaro.github.io/blog/post/ban-wa-gong-kai-qi-mi-yao-deng-lu-%28SSH_KEYS%29VPS.html</link><description>自从搬瓦工对控制面板进行了改版设计后，就支持了SSH_KEYS密钥登陆的功能，虽然这个功能一直都是可以自我安装使用的，但是当前放在了更明显的位置，还是希望更多的用户能够使用这个更安全的方式维护VPS。</description><guid isPermaLink="true">https://a2lvaro.github.io/blog/post/ban-wa-gong-kai-qi-mi-yao-deng-lu-%28SSH_KEYS%29VPS.html</guid><pubDate>Fri, 27 Dec 2024 04:38:23 +0000</pubDate></item><item><title>什么是电信CTGNetGIA？与CN2GIA的区别</title><link>https://a2lvaro.github.io/blog/post/shen-me-shi-dian-xin-CTGNetGIA%EF%BC%9F-yu-CN2GIA-de-qu-bie.html</link><description>&#13;
+Debian默认没有auth.log文件的，auth.log日志文件，记录了ssh登录的一些信息，里面包括ip地址、端口号、用户名等信息，如下一条记录日志。</description><guid isPermaLink="true">https://a2lvaro.github.io/blog/post/Debian-zeng-jia-auth.log-ri-zhi.html</guid><pubDate>Sat, 28 Dec 2024 05:08:01 +0000</pubDate></item><item><title>搬瓦工开启密钥登陆(SSH_KEYS)VPS</title><link>https://a2lvaro.github.io/blog/post/ban-wa-gong-kai-qi-mi-yao-deng-lu-%28SSH_KEYS%29VPS.html</link><description>自从搬瓦工对控制面板进行了改版设计后，就支持了SSH_KEYS密钥登陆的功能，虽然这个功能一直都是可以自我安装使用的，但是当前放在了更明显的位置，还是希望更多的用户能够使用这个更安全的方式维护VPS。</description><guid isPermaLink="true">https://a2lvaro.github.io/blog/post/ban-wa-gong-kai-qi-mi-yao-deng-lu-%28SSH_KEYS%29VPS.html</guid><pubDate>Fri, 27 Dec 2024 04:38:23 +0000</pubDate></item><item><title>查询目标网站是否支持 OCSP Stapling</title><link>https://a2lvaro.github.io/blog/post/cha-xun-mu-biao-wang-zhan-shi-fou-zhi-chi-%20OCSP%20Stapling.html</link><description>&#13;
+&#13;
+&#13;
+如何寻找 TLS1.3/H2 的网站&#13;
+目标网站最低标准：国外网站，支持 TLSv1.3 与 H2，域名非跳转用&#13;
+&#13;
+加分项：IP 相近（更像，且延迟低），Server Hello 后的握手消息一起加密（如 dl.google.com），有 OCSP Stapling&#13;
+&#13;
+配置加分项：禁回国流量，TCP/80、UDP/443 也转发（REALITY 对外表现即为端口转发，目标 IP 冷门或许更好）&#13;
+&#13;
+可以使用这个网站：[点击访问](https://www.ssllabs.com/ssltest/index.html) ，来寻找 TLS1.3 / X25519 / H2 的指向站点&#13;
+也可以使用这个网站：[点击访问](http://web.chacuo.net/netocspstapling) ，来查询目标网站是否支持 OCSP Stapling （加分项而已，不支持也没有太大关系）&#13;
+&#13;
+。</description><guid isPermaLink="true">https://a2lvaro.github.io/blog/post/cha-xun-mu-biao-wang-zhan-shi-fou-zhi-chi-%20OCSP%20Stapling.html</guid><pubDate>Fri, 21 Jun 2024 05:22:09 +0000</pubDate></item><item><title>什么是电信CTGNetGIA？与CN2GIA的区别</title><link>https://a2lvaro.github.io/blog/post/shen-me-shi-dian-xin-CTGNetGIA%EF%BC%9F-yu-CN2GIA-de-qu-bie.html</link><description>&#13;
 一、什么是 CTGNet GIA?&#13;
 &#13;
 　　CTGNet (AS23764)，是中国电信全球公司 China Telecom Global(CTG)新构建的一个国际多业务承载网络，面向企业客户提供定制化的国际互联网专线接入服务(GIA)，以高速、稳定、良好的中国方向访问质量，为国内企业出海和海外企业提供很好的中国网络方案。</description><guid isPermaLink="true">https://a2lvaro.github.io/blog/post/shen-me-shi-dian-xin-CTGNetGIA%EF%BC%9F-yu-CN2GIA-de-qu-bie.html</guid><pubDate>Fri, 21 Jun 2024 04:57:07 +0000</pubDate></item><item><title>通过 Acme 脚本免费申请 SSL 证书，自动更新证书，免费 CA 证书申请教程</title><link>https://a2lvaro.github.io/blog/post/tong-guo-%20Acme%20-jiao-ben-mian-fei-shen-qing-%20SSL%20-zheng-shu-%EF%BC%8C-zi-dong-geng-xin-zheng-shu-%EF%BC%8C-mian-fei-%20CA%20-zheng-shu-shen-qing-jiao-cheng.html</link><description>&#13;
